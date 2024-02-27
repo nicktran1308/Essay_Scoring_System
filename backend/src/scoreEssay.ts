@@ -35,7 +35,7 @@ app.post('/score', async (req: Request, res: Response) => {
 
 async function scoreEssay(essayText: string): Promise<ScoreResults> {
     const OPENAI_API_URL = 'https://api.openai.com/v1/completions';
-    const apiKey = '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' 
+    const apiKey = 'insert OPENAI API key here'; 
     const prompt = `
     Essay: "${essayText}"
     Please provide an evaluation of the essay above with scores from 1 to 10 for all of the following criterias and provide feedback in a valid json format like this example:
